@@ -1,8 +1,6 @@
 <?php 
 include 'conexion.php'; 
 
-// 1. Detectar si el usuario pulsó en alguna categoría por la URL
-// Si no pulsó ninguna, por defecto se muestran 'Todos'
 $categoria_seleccionada = isset($_GET['cat']) ? $_GET['cat'] : 'Todos';
 ?>
 
@@ -51,7 +49,7 @@ $categoria_seleccionada = isset($_GET['cat']) ? $_GET['cat'] : 'Todos';
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
       <?php
-      // 2. LÓGICA FILTRADO PDO
+      
       if ($categoria_seleccionada == 'Todos') {
           $stmt = $pdo->query("SELECT * FROM productos");
       } else {
