@@ -16,7 +16,8 @@ $categoria_seleccionada = isset($_GET['cat']) ? $_GET['cat'] : 'Todos';
 
   <nav class="bg-white border-b-2 border-blue-600 p-4">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <span class="text-xl font-bold text-blue-600">BURGOS-LIBROS</span>
+      <a href="index.php"><span class="text-xl font-bold text-blue-600">BURGOS-LIBROS</span></a>
+      
       <div class="flex gap-4 items-center">
         <a href="index.php" class="text-blue-600 font-bold underline">Catálogo</a>
         <a href="admin.php" class="text-gray-600 hover:text-blue-600">Admin</a>
